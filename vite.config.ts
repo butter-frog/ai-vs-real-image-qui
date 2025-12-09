@@ -1,15 +1,18 @@
-import tailwindcss from "@tailwindcss/vite";
-import react from "@vitejs/plugin-react-swc";
 import { defineConfig, PluginOption } from "vite";
+import react from "@vitejs/plugin-react-swc";
+import tailwindcss from "@tailwindcss/vite";
 
 import sparkPlugin from "@github/spark/spark-vite-plugin";
 import createIconImportProxy from "@github/spark/vitePhosphorIconProxyPlugin";
-import { resolve } from 'path'
+import { resolve } from "path";
 
-const projectRoot = process.env.PROJECT_ROOT || import.meta.dirname
+const projectRoot = process.env.PROJECT_ROOT || import.meta.dirname;
 
 // https://vite.dev/config/
 export default defineConfig({
+  // 👇 IMPORTANT for GitHub Pages project sites:
+  // https://<user>.github.io/<repo>/
+  base: "/ai-vs-real-image-qui/",
   plugins: [
     react(),
     tailwindcss(),
@@ -19,7 +22,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': resolve(projectRoot, 'src')
-    }
+      "@": resolve(projectRoot, "src"),
+    },
   },
 });
