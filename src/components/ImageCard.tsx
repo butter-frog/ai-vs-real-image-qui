@@ -35,9 +35,9 @@ export function ImageCard({
   return (
     <motion.div
       className={cn(
-        'relative cursor-pointer rounded-lg border-4 overflow-hidden transition-all duration-300',
+        'relative cursor-pointer rounded-lg border-4 overflow-hidden transition-all duration-300 shadow-md',
         getBorderColor(),
-        !disabled && !isRevealed && 'hover:border-accent/50 hover:shadow-xl hover:scale-[1.02]',
+        !disabled && !isRevealed && 'hover:border-accent/60 hover:shadow-xl hover:scale-[1.02]',
         disabled && 'cursor-not-allowed opacity-75',
         isRevealed && !isCorrect && 'animate-shake'
       )}

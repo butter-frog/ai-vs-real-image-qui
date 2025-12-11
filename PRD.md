@@ -57,33 +57,34 @@ This is a multi-step quiz with state management for progress tracking, score cal
 
 ## Design Direction
 
-The design should evoke feelings of curiosity, focus, and clarity - like a sophisticated digital learning tool. It should feel modern and trustworthy, with visual design that emphasizes the analytical nature of comparing images. The interface should guide users' attention effectively between comparison, selection, and learning moments.
+The design should evoke feelings of professionalism, trust, and academic rigor - like a sophisticated digital learning platform used in professional or educational settings. It should feel refined and authoritative, with visual design that emphasizes credibility and clarity. The interface should guide users through a formal learning experience while maintaining engagement.
 
 ## Color Selection
 
-A sophisticated, modern palette that feels educational and tech-forward, with strong contrast to maintain focus on the images.
+A refined, professional palette inspired by academic and business environments, with muted tones that communicate sophistication and credibility.
 
-- **Primary Color**: Deep indigo `oklch(0.35 0.15 275)` - Communicates intelligence, trust, and digital sophistication
-- **Secondary Colors**: Cool slate backgrounds `oklch(0.96 0.01 260)` for cards and `oklch(0.25 0.01 260)` for dark accents
-- **Accent Color**: Vibrant cyan `oklch(0.70 0.15 200)` - Draws attention to interactive elements and correct answers, feels modern and digital
+- **Primary Color**: Muted Navy `oklch(0.35 0.08 250)` - Communicates professionalism, trust, and academic authority
+- **Secondary Colors**: Soft gray backgrounds `oklch(0.92 0.008 240)` for cards and `oklch(0.94 0.005 240)` for muted sections
+- **Accent Color**: Professional Blue `oklch(0.50 0.10 240)` - Subtle attention-drawing color that maintains formality
 - **Foreground/Background Pairings**: 
-  - Primary (Deep Indigo): White text `oklch(0.99 0 0)` - Ratio 9.2:1 ✓
-  - Accent (Vibrant Cyan): Dark slate text `oklch(0.25 0.01 260)` - Ratio 5.1:1 ✓
-  - Background (Pale Slate): Dark text `oklch(0.25 0.01 260)` - Ratio 12.8:1 ✓
-  - Success green `oklch(0.65 0.18 150)` for correct answers
-  - Error red `oklch(0.60 0.22 25)` for incorrect answers
+  - Primary (Muted Navy): Light background text `oklch(0.98 0.002 240)` - Ratio 8.5:1 ✓
+  - Accent (Professional Blue): Light text `oklch(0.98 0.002 240)` - Ratio 5.8:1 ✓
+  - Background (Light Gray): Dark text `oklch(0.25 0.015 250)` - Ratio 11.2:1 ✓
+  - Success green `oklch(0.55 0.12 155)` for correct answers (more muted)
+  - Error red `oklch(0.55 0.18 25)` for incorrect answers (more subdued)
 
 ## Font Selection
 
-Typography should feel modern, technical, and highly readable - conveying precision and clarity appropriate for an analytical task.
+Typography should feel formal, professional, and highly readable - conveying authority and scholarly precision appropriate for educational content.
 
-- **Primary Font**: Space Grotesk - A geometric sans-serif with technical character that feels contemporary without being sterile
+- **Primary Font**: Source Sans 3 - A professional humanist sans-serif designed for clarity and readability in user interfaces
+- **Heading Font**: Crimson Pro - An elegant serif typeface that adds sophistication and gravitas to titles
 - **Typographic Hierarchy**: 
-  - H1 (Page Title): Space Grotesk Bold/36px/tight letter-spacing
-  - H2 (Section Headers): Space Grotesk SemiBold/24px/normal spacing
-  - H3 (Question Number): Space Grotesk Medium/18px/wide letter-spacing
-  - Body (Instructions & Explanations): Space Grotesk Regular/16px/relaxed line-height (1.6)
-  - Small (Progress Text): Space Grotesk Medium/14px/normal spacing
+  - H1 (Page Title): Crimson Pro Bold/48px/tight letter-spacing (-0.02em)
+  - H2 (Section Headers): Crimson Pro Bold/32px/tight spacing
+  - H3 (Question Number): Source Sans 3 SemiBold/14px/wide letter-spacing (uppercase)
+  - Body (Instructions & Explanations): Source Sans 3 Regular/16px/relaxed line-height (1.6)
+  - Small (Progress Text): Source Sans 3 Medium/14px/normal spacing
 
 ## Animations
 

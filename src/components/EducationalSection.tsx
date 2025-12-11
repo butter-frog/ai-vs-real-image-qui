@@ -43,64 +43,64 @@ export function EducationalSection() {
   ]
 
   return (
-    <div className="w-full max-w-6xl mx-auto mt-16 mb-8">
-      <Separator className="mb-12" />
+    <div className="w-full max-w-6xl mx-auto mt-20 mb-8">
+      <Separator className="mb-16" />
       
-      <Card className="p-8 bg-card border-2">
-        <div className="flex items-start gap-4 mb-6">
-          <Warning size={36} weight="fill" className="text-destructive flex-shrink-0 mt-1" />
+      <Card className="p-10 bg-card border-2 shadow-lg">
+        <div className="flex items-start gap-4 mb-8">
+          <Warning size={40} weight="fill" className="text-destructive flex-shrink-0 mt-1" />
           <div>
-            <h3 className="text-3xl font-bold text-foreground mb-2">
+            <h3 className="text-4xl font-bold text-foreground mb-3" style={{ fontFamily: 'var(--font-serif)' }}>
               Why This Matters
             </h3>
-            <p className="text-muted-foreground text-sm uppercase tracking-wider font-medium">
+            <p className="text-muted-foreground text-sm uppercase tracking-wider font-semibold">
               Understanding the Risks of AI-Generated Images
             </p>
           </div>
         </div>
         
-        <div className="space-y-5 text-foreground leading-relaxed mb-10">
+        <div className="space-y-6 text-foreground leading-relaxed mb-12 text-base">
           <p>
-            While AI image generation offers incredible creative potential, <strong className="text-primary">its rapid advancement also presents significant dangers</strong> that demand our attention. Perhaps the most immediate concern is the <strong className="text-destructive">proliferation of misinformation and deepfakes</strong>. High-quality AI-generated images can now create convincing, yet entirely fabricated, scenarios, ranging from fake news events that influence public opinion to deceptive "evidence" used in legal disputes, potentially leading to <strong>wrongful accusations or undermining trust in photographic evidence</strong>. 
+            While AI image generation offers incredible creative potential, <strong className="text-primary font-semibold">its rapid advancement also presents significant dangers</strong> that demand our attention. Perhaps the most immediate concern is the <strong className="text-destructive font-semibold">proliferation of misinformation and deepfakes</strong>. High-quality AI-generated images can now create convincing, yet entirely fabricated, scenarios, ranging from fake news events that influence public opinion to deceptive "evidence" used in legal disputes, potentially leading to <strong className="font-semibold">wrongful accusations or undermining trust in photographic evidence</strong>. 
           </p>
           
           <p>
-            Beyond the courts, <strong className="text-destructive">the ease with which AI can generate non-consensual intimate imagery</strong> poses a severe threat to individual privacy and safety, allowing for exploitation and harassment on an unprecedented scale. Moreover, <strong>the blurring line between real and synthetic visuals can erode our collective ability to discern truth</strong>, making it increasingly difficult to trust what we see online and fostering a climate of skepticism that can be detrimental to informed public discourse.
+            Beyond the courts, <strong className="text-destructive font-semibold">the ease with which AI can generate non-consensual intimate imagery</strong> poses a severe threat to individual privacy and safety, allowing for exploitation and harassment on an unprecedented scale. Moreover, <strong className="font-semibold">the blurring line between real and synthetic visuals can erode our collective ability to discern truth</strong>, making it increasingly difficult to trust what we see online and fostering a climate of skepticism that can be detrimental to informed public discourse.
           </p>
           
           <p>
-            Furthermore, the technology raises <strong className="text-primary">complex ethical questions regarding copyright, intellectual property, and artistic authenticity</strong>. AI models are trained on vast datasets of existing images, often without the explicit consent or compensation of the original creators, leading to debates about fair use and ownership. There's also the risk that <strong>AI will perpetuate and amplify societal biases</strong> present in its training data, inadvertently generating images that reinforce stereotypes or marginalize certain groups.
+            Furthermore, the technology raises <strong className="text-primary font-semibold">complex ethical questions regarding copyright, intellectual property, and artistic authenticity</strong>. AI models are trained on vast datasets of existing images, often without the explicit consent or compensation of the original creators, leading to debates about fair use and ownership. There's also the risk that <strong className="font-semibold">AI will perpetuate and amplify societal biases</strong> present in its training data, inadvertently generating images that reinforce stereotypes or marginalize certain groups.
           </p>
           
-          <p className="bg-accent/10 border-l-4 border-accent p-4 font-medium">
-            As AI image generation becomes more sophisticated and accessible, <strong className="text-accent">understanding its limitations and potential for misuse is crucial</strong>. Our ability to critically evaluate digital visuals and recognize the subtle signs of AI manipulation is a vital skill in navigating an increasingly synthetic world, ensuring we can harness its benefits while mitigating its profound risks.
+          <p className="bg-accent/10 border-l-4 border-accent p-6 font-medium rounded-r-md">
+            As AI image generation becomes more sophisticated and accessible, <strong className="text-accent font-semibold">understanding its limitations and potential for misuse is crucial</strong>. Our ability to critically evaluate digital visuals and recognize the subtle signs of AI manipulation is a vital skill in navigating an increasingly synthetic world, ensuring we can harness its benefits while mitigating its profound risks.
           </p>
         </div>
 
-        <Separator className="my-8" />
+        <Separator className="my-10" />
 
-        <div className="flex items-start gap-4 mb-6 mt-8">
-          <Eye size={36} weight="fill" className="text-accent flex-shrink-0 mt-1" />
+        <div className="flex items-start gap-4 mb-8 mt-10">
+          <Eye size={40} weight="fill" className="text-accent flex-shrink-0 mt-1" />
           <div>
-            <h3 className="text-3xl font-bold text-foreground mb-2">
+            <h3 className="text-4xl font-bold text-foreground mb-3" style={{ fontFamily: 'var(--font-serif)' }}>
               Detection Tips
             </h3>
-            <p className="text-muted-foreground text-sm uppercase tracking-wider font-medium">
+            <p className="text-muted-foreground text-sm uppercase tracking-wider font-semibold">
               What to Look For When Evaluating Images
             </p>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-4 mt-6">
+        <div className="grid md:grid-cols-2 gap-5 mt-8">
           {detectionTips.map((tip, index) => (
             <div 
               key={index}
-              className="bg-secondary/30 border border-border p-5 space-y-2"
+              className="bg-secondary/40 border-2 border-border p-6 space-y-2 rounded-lg shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="flex items-start gap-3">
-                <Lightbulb size={20} weight="fill" className="text-accent flex-shrink-0 mt-0.5" />
+                <Lightbulb size={22} weight="fill" className="text-accent flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-foreground text-base mb-1.5">
+                  <h4 className="font-bold text-foreground text-base mb-2">
                     {tip.title}
                   </h4>
                   <p className="text-sm text-muted-foreground leading-relaxed">
@@ -112,9 +112,9 @@ export function EducationalSection() {
           ))}
         </div>
 
-        <div className="mt-8 p-6 bg-primary/5 border-2 border-primary">
-          <p className="text-foreground font-semibold text-center">
-            <strong className="text-primary">Remember:</strong> As AI technology advances, these markers become increasingly subtle. Stay informed, practice critical evaluation, and maintain a healthy skepticism when viewing digital content.
+        <div className="mt-10 p-8 bg-primary/5 border-2 border-primary rounded-lg">
+          <p className="text-foreground font-medium text-center leading-relaxed">
+            <strong className="text-primary font-bold">Remember:</strong> As AI technology advances, these markers become increasingly subtle. Stay informed, practice critical evaluation, and maintain a healthy skepticism when viewing digital content.
           </p>
         </div>
       </Card>
